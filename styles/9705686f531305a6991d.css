@@ -20,7 +20,7 @@ body {
 .app-content {
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,5 +159,105 @@ body {
     opacity: .5; }
   100% {
     top: 0;
+    opacity: 1; } }
+
+.projects-section {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.project {
+  position: relative;
+  width: calc(100% / 3);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.project__title {
+  display: block;
+  position: relative;
+  z-index: 300; }
+
+h1:hover + .back {
+  background: blue; }
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  bottom: 0;
+  padding: 0 4%; }
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__link {
+  display: block;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  -webkit-animation: fadeIn 2s forwards ease-in;
+          animation: fadeIn 2s forwards ease-in;
+  margin-right: 20%; }
+
+@media all and (max-width: 900px) {
+  .footer__link {
+    display: none; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  94% {
+    opacity: 0; }
+  95% {
+    opacity: .3; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  94% {
+    opacity: 0; }
+  95% {
+    opacity: .3; }
+  100% {
     opacity: 1; } }
 
