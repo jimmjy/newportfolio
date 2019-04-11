@@ -13,6 +13,12 @@ module.exports = {
 		contentBase: './dist',
 		historyApiFallback: true,
 	},
+	optimization: {
+		splitChunks: {
+			// include all types of chunks
+			chunks: 'all',
+		},
+	},
 	module: {
 		rules: [
 			{

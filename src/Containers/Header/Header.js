@@ -64,10 +64,10 @@ class Header extends Component {
 					</Link>
 				</div>
 				<div className="header-links">
-					<Link className="header__link" to="/">
+					<Link className="header__link" to="/projects">
 						+Projects
 					</Link>
-					<Link className="header__link" to="/">
+					<Link className="header__link" to="/about">
 						About
 					</Link>
 					<a href="mailto:jamesfinkelstein@yahoo.com" className="header__link" to="/">

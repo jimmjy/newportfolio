@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+//component import
+import Footer from '../../Components/Footer/Footer';
+
 class App extends Component {
 	render() {
 		return (
@@ -10,6 +13,7 @@ class App extends Component {
 				<div className="app-content-footer">
 					<p className="app-content__about">Hi, I'm James a Web Developer based in Toronto</p>
 				</div>
+				<Footer />
 			</div>
 		);
 	}

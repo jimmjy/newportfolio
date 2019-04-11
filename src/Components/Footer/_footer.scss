@@ -1,0 +1,50 @@
+.footer-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    padding: 0 4%;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer__link {
+    display: block;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    animation: fadeIn 2s forwards ease-in;
+    margin-right: 20%;
+}
+
+@media all and (max-width: 900px) {
+    .footer__link {
+        display: none;
+    }
+}
+
+//animation
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    94% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
