@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    animation: fadeDown 2s forwards cubic-bezier(0, .99, .93, .83);
+    z-index: 100;
+}
+
+.header.trans--down {
+    top: 0;
+    opacity: 1;
+}
+
+.header-title {
+    margin-right: 4%;
+}
+
+.header__title-name,
+.header__link {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.header__link {
+    margin: 0 10%;
+}
+
+.header__link:hover {
+    color: rgb(160, 153, 153);
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 4%;
+}
+
+//animation
+@keyframes fadeDown {
+    0% {
+        top: -10%;
+        opacity: 0;
+    }
+
+    50% {
+        top: -5%;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: .5;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
