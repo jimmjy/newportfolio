@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 //component import
 import Footer from '../Footer/Footer';
@@ -29,15 +30,15 @@ class Projects extends Component {
 			<div className="projects-section">
 				<div className="project">
 					<h1 className="project__title">Freelance</h1>
-					<div className="back" />
+					<div className="back back-freelance" />
 				</div>
 				<div className="project">
-					<h1 className="project__title">Freelance</h1>
-					<div className="back" />
+					<h1 className="project__title">Hobby Projects</h1>
+					<div className="back back-hobby-games" />
 				</div>
 				<div className="project">
-					<h1 className="project__title">Freelance</h1>
-					<div className="back" />
+					<h1 className="project__title">School Projects</h1>
+					<div className="back back-school-projects" />
 				</div>
 				{this.state.show && <Footer />}
 			</div>
@@ -48,3 +49,4 @@ class Projects extends Component {
 export default Projects;
 
 // Photo by Ben Kolde on Unsplash
+// Photo by Charles 🇵🇭 on Unsplash

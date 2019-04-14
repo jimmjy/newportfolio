@@ -1,37 +1,69 @@
 .projects-section {
-    position: relative;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .project {
-    position: relative;
-    width: calc(100% / 3);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+	width: calc(100% / 3);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    // z-index: 200;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.back-freelance {
+	background: url('../../assets/freelance-back.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+	transition: all 200ms ease-in;
+}
+
+.back-hobby-games {
+	background: url('../../assets/games-back.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+	transition: all 200ms ease-in;
+}
+
+.back-school-projects {
+	background: url('../../assets/school-photo.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+	transition: all 200ms ease-in;
 }
 
 .project__title {
-    display: block;
-    position: relative;
-    z-index: 300;
+	position: relative;
+	z-index: 300;
+	color: white;
+	font-size: 2rem;
 }
 
-h1:hover+.back {
-    background: blue;
+.project__title:hover {
+	cursor: pointer;
+	color: black;
+}
+
+.project__title:hover + .back {
+	// background: url('../../assets/freelance-back.jpg') no-repeat;
+	// background-position: center;
+	// background-size: cover;
+	opacity: 1;
 }
