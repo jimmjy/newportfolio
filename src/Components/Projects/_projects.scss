@@ -49,21 +49,44 @@
 	transition: all 200ms ease-in;
 }
 
+.back-opacity {
+	opacity: 1;
+}
+
 .project__title {
 	position: relative;
 	z-index: 300;
 	color: white;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 2rem;
+	text-decoration: none;
 }
 
 .project__title:hover {
 	cursor: pointer;
-	color: black;
+	opacity: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
-.project__title:hover + .back {
-	// background: url('../../assets/freelance-back.jpg') no-repeat;
-	// background-position: center;
-	// background-size: cover;
+.project__title:hover+.back {
 	opacity: 1;
+}
+
+@media all and (max-width: $mobile-screen) {
+
+	.project {
+		width: 100%;
+	}
+
+	.project__title:hover {
+		opacity: 1;
+
+	}
+
+	.projects-section {
+		flex-direction: column;
+		height: 95vh;
+	}
 }

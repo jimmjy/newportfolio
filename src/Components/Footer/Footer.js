@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { isMobile } from 'react-device-detect';
+
 const Footer = () => {
 	return (
-		<div className="footer-section">
+		<div className={`footer-section ${isMobile && 'footer-relative'}`}>
 			<div className="footer-nav">
 				<a href="https://github.com/jimmjy" target="_blank" className="footer__link">
 					GitHub

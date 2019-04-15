@@ -24,12 +24,6 @@
     margin-right: 20%;
 }
 
-@media all and (max-width: 900px) {
-    .footer-section {
-        display: none;
-    }
-}
-
 //animation
 @keyframes fadeIn {
     0% {
@@ -46,5 +40,21 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+.footer-relative {
+    position: relative;
+}
+
+//mobile
+@media all and (max-width: $mobile-screen) {
+    .footer-section {
+        position: relative;
+    }
+
+    .footer__link {
+        font-size: 1rem;
+        margin-right: 10%;
     }
 }

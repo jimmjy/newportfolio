@@ -24,3 +24,6 @@ render(
 	</Router>,
 	document.getElementById('root'),
 );
+
+// ============ react-device-detect ==================
+// use this for mobile view

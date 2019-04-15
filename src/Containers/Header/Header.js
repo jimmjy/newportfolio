@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
 
 class Header extends Component {
 	state = {
@@ -57,7 +58,7 @@ class Header extends Component {
 
 	render() {
 		return (
-			<div className={`header ${this.state.transDown}`}>
+			<div className={`header ${isMobile && 'header-relative'}`}>
 				<div className="header-title">
 					<Link to="/" className="header__title-name">
 						_> {this.state.title}

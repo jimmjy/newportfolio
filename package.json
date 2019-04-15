@@ -41,6 +41,7 @@
 	"dependencies": {
 		"history": "^4.9.0",
 		"react": "^16.8.4",
+		"react-device-detect": "^1.6.2",
 		"react-dom": "^16.8.4",
 		"react-router-dom": "^5.0.0"
 	}
