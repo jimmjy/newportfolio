@@ -17,7 +17,7 @@
     width: 60%;
 }
 
-.name {
+.app__slogan {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 4rem;
@@ -65,12 +65,24 @@
 
 //mobile
 @media all and (max-width: $mobile-screen) {
+    .app-content {
+        height: 82vh;
+    }
+
     .app-content-center {
         width: 80%;
         margin: 2% auto;
     }
 
+    .app__slogan {
+        font-size: 2rem;
+    }
+
     .app-content-footer {
         width: 70%;
+    }
+
+    .app-content__about {
+        font-size: 1rem;
     }
 }

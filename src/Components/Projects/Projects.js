@@ -41,7 +41,7 @@ class Projects extends Component {
 					<Link className="project__title">School Projects</Link>
 					<div className={`back back-school-projects ${this.state.mobile && 'back-opacity'}`} />
 				</div>
-				<Footer />
+				<Footer classStyle={'footer-projects-mobile'} />
 			</div>
 		);
 	}
