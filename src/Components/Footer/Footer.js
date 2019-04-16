@@ -3,6 +3,7 @@ import React from 'react';
 import { isMobile } from 'react-device-detect';
 
 const Footer = props => {
+	console.log(props);
 	return (
 		<div className={`footer-section ${props.classStyle}`}>
 			<div className="footer-nav">

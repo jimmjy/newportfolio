@@ -15,7 +15,7 @@ class App extends Component {
 				<div className="app-content-footer">
 					<p className="app-content__about">Hi, I'm James a Web Developer based in Toronto</p>
 				</div>
-				<Footer />
+				<Footer classStyle={'footer-app-mobile'} />
 			</div>
 		);
 	}

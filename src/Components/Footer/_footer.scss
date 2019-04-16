@@ -51,6 +51,11 @@
 @media all and (max-width: $mobile-screen) {
     .footer-projects-mobile {
         position: relative;
+        bottom: 0;
+    }
+
+    .footer-app-mobile {
+        bottom: 5%;
     }
 
     .footer__link {
