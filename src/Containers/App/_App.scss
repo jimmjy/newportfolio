@@ -1,6 +1,7 @@
 // ------------ adjust height based off footer ----------
 
 .app-content {
+    position: relative;
     width: 100%;
     height: 90vh;
     display: flex;
@@ -35,19 +36,15 @@
 }
 
 //animation
-.fade--up {
-    top: 0;
-    opacity: 1;
-}
 
 @keyframes fadeup {
     0% {
-        top: 30%;
+        top: 30px;
         opacity: 0;
     }
 
     50% {
-        top: 15%;
+        top: 15px;
         opacity: 0;
     }
 

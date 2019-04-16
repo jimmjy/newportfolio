@@ -6,6 +6,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 0;
+	animation: fadeInProjects 2s ease-in forwards;
 }
 
 .project {
@@ -71,6 +73,17 @@
 
 .project__title:hover+.back {
 	opacity: 1;
+}
+
+//animation
+@keyframes fadeInProjects {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1
+	}
 }
 
 @media all and (max-width: $mobile-screen) {
