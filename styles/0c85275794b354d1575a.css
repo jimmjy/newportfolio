@@ -47,7 +47,7 @@ body {
   margin-bottom: 2%;
   width: 60%; }
 
-.name {
+.app__slogan {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: 4rem;
@@ -93,11 +93,17 @@ body {
     opacity: 1; } }
 
 @media all and (max-width: 800px) {
+  .app-content {
+    height: 82vh; }
   .app-content-center {
     width: 80%;
     margin: 2% auto; }
+  .app__slogan {
+    font-size: 2rem; }
   .app-content-footer {
-    width: 70%; } }
+    width: 70%; }
+  .app-content__about {
+    font-size: 1rem; } }
 
 .header {
   display: -webkit-box;
@@ -187,7 +193,8 @@ body {
             flex-direction: column;
     background: #2c2d2d;
     position: relative;
-    height: 15%; }
+    height: 18vh;
+    padding-bottom: 2%; }
   .header-title {
     padding: 4% 0; }
   .header-links {
@@ -268,8 +275,7 @@ body {
   cursor: pointer;
   opacity: 0;
   display: block;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .project__title:hover + .back {
   opacity: 1; }
@@ -277,14 +283,36 @@ body {
 @media all and (max-width: 800px) {
   .project {
     width: 100%; }
-  .project__title:hover {
-    opacity: 1; }
   .projects-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 95vh; } }
+    height: 95vh; }
+  .project__title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  .project__title:hover {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  .back-hobby-games {
+    background-position: 5% 0; }
+  .back {
+    opacity: 1; } }
 
 .footer-section {
   display: -webkit-box;
@@ -297,7 +325,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  height: 15%;
+  height: 15vh;
   width: 100%;
   bottom: 0;
   padding: 0 4%; }
@@ -342,7 +370,7 @@ body {
   position: relative; }
 
 @media all and (max-width: 800px) {
-  .footer-section {
+  .footer-projects-mobile {
     position: relative; }
   .footer__link {
     font-size: 1rem;
