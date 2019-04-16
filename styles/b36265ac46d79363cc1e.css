@@ -22,9 +22,8 @@ body {
     height: 100%; } }
 
 .app-content {
-  position: relative;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +112,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 4%;
-  height: 10%;
+  height: 10vh;
   width: 100%;
   position: fixed;
   -webkit-animation: fadeDown 2s forwards cubic-bezier(0, 0.99, 0.93, 0.83);
@@ -198,9 +197,8 @@ body {
     width: 90%; } }
 
 .projects-section {
-  position: relative;
   z-index: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
