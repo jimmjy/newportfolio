@@ -86,7 +86,7 @@ body {
 
 @media all and (max-width: 800px) {
   .app-content {
-    height: 82vh; }
+    height: 60vh; }
   .app-content-center {
     width: 80%;
     margin: 2% auto; }
@@ -362,7 +362,10 @@ body {
 
 @media all and (max-width: 800px) {
   .footer-projects-mobile {
-    position: relative; }
+    position: relative;
+    bottom: 0; }
+  .footer-app-mobile {
+    bottom: 5%; }
   .footer__link {
     font-size: 1rem;
     margin-right: 10%; } }
