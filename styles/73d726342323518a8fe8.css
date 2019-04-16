@@ -16,12 +16,9 @@ body {
   background-position: center;
   overflow-y: scroll; }
 
-#root {
-  height: 100%;
-  width: 100%; }
-
 @media all and (max-width: 800px) {
   body {
+    min-height: 100vh;
     height: 100%; } }
 
 .app-content {
@@ -193,7 +190,7 @@ body {
             flex-direction: column;
     background: #2c2d2d;
     position: relative;
-    height: 18vh;
+    height: 15vh;
     padding-bottom: 2%; }
   .header-title {
     padding: 4% 0; }
