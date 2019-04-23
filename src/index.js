@@ -7,6 +7,7 @@ import App from './Containers/App/App';
 import Header from './Containers/Header/Header';
 import Projects from './Components/Projects/Projects';
 import About from './Components/About/About';
+import Freelance from './Components/Freelance/Freelance';
 import NoMatch from './Components/404/NoMatch';
 
 //styles
@@ -17,8 +18,9 @@ render(
 		<Header />
 		<Switch>
 			<Route exact path="/" component={App} />
-			<Route path="/projects" component={Projects} />
-			<Route path="/about" component={About} />
+			<Route exact path="/projects" component={Projects} />
+			<Route exact path="/about" component={About} />
+			<Route exact path="/projects/freelance" component={Freelance} />
 			<Route component={NoMatch} />
 		</Switch>
 	</Router>,
