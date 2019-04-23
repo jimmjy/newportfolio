@@ -52,7 +52,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpg|gif)$/,
+				test: /\.(mp4|png|jpg|gif)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -114,13 +114,17 @@ module.exports = {
 					},
 				],
 			},
+			// {
+			// 	test: /\.(mov|mp4)$/,
+			// 	use: ['file-loader'],
+			// },
 			{
 				test: /\.(html)$/,
 				use: {
 					loader: 'html-loader',
 					options: {
 						// minimize: true,
-						attrs: ['img:src', 'link:href'],
+						attrs: ['img:src', 'link:href', 'source:src'],
 					},
 				},
 			},
