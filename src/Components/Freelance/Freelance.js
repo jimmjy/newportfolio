@@ -7,7 +7,9 @@ const Freelance = () => {
 		<div className="freelance-section">
 			{isMobile ? (
 				<div className="freelance-card juliet">
-					<p>hello</p>
+					<div className="card-inner">
+						<p>hello</p>
+					</div>
 				</div>
 			) : (
 				<div className="freelance-card juliet">
@@ -18,10 +20,19 @@ const Freelance = () => {
 							</video>
 						</div>
 						<div className="card-back juliet">
-							<h1 className="back-face">Juliet Creative</h1>
-							<p>description about site</p>
-							<a href="https://jimmjy.github.io/julietbundled/" target="_blank">
-								Live
+							<h1 className="back__face__title">Juliet Creative</h1>
+							<p className="juliet__about__site">
+								This is a site that I have been working on for the last year. I worked closely with
+								Duncan Collis, a highly talented graphic designer at Juliet Creative to design and
+								implement this second version of the site. We will be launching it soon, stay tuned...
+							</p>
+							<p className="juliet__about__site">
+								This was created with HTML5, CSS3, JavaScript and was bundled with a custom webpack
+								config I created myself.
+							</p>
+
+							<a className="juliet__link" href="https://jimmjy.github.io/julietbundled/" target="_blank">
+								View
 							</a>
 						</div>
 					</div>
