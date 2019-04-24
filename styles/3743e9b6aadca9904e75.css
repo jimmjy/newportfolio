@@ -434,11 +434,10 @@ body {
           transform: scale(1.2); }
 
 .freelance-card.reelStart:hover {
-  top: 100px;
-  right: 10%;
+  left: -10%;
   z-index: 100;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5); }
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
 
 .freelance-card:hover .card-inner {
   -webkit-transform: rotateY(180deg);
@@ -459,11 +458,52 @@ body {
   background: black;
   border-radius: 20px; }
 
-.card-back {
-  background-color: dodgerblue;
+.card-back.juliet {
+  background-color: #14557a;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
+
+.card-back.juliet {
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.back__face__title {
+  margin-bottom: 20px;
+  font-size: 2rem; }
+
+.juliet__about__site {
+  font-size: 1.3rem;
+  padding: 0 3px;
+  margin-bottom: 20px; }
+
+.juliet__link {
+  width: 40%;
+  height: 30px;
+  margin: 0 auto;
+  color: black;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-decoration: none;
+  background: #5f5d5d;
+  border-radius: 5px;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 3px 0px grey;
+          box-shadow: 2px 2px 3px 0px grey; }
+
+.juliet__link:hover {
+  -webkit-box-shadow: 1px 1px 3px 0px grey;
+          box-shadow: 1px 1px 3px 0px grey; }
+
+.juliet__link:active {
+  -webkit-box-shadow: .5px .5px 0px 0px grey;
+          box-shadow: .5px .5px 0px 0px grey; }
 
 @media all and (max-width: 800px) {
   .freelance-section {
