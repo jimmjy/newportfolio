@@ -52,7 +52,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(mp4|png|jpg|gif)$/,
+				test: /\.(png|jpg|gif)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -82,6 +82,17 @@ module.exports = {
 					},
 				],
 			},
+			// {
+			// 	test: /\.(mp4)$/,
+			// 	use: {
+			// 		loader: 'file-loader',
+			// 		options: {
+			// 			outputPath: './images',
+			// 			name: '[contenthash].[ext]',
+			// 			publicPath: '../images/',
+			// 		},
+			// 	},
+			// },
 			{
 				test: /\.(css|scss)$/,
 				use: [
@@ -114,17 +125,28 @@ module.exports = {
 					},
 				],
 			},
-			// {
-			// 	test: /\.(mov|mp4)$/,
-			// 	use: ['file-loader'],
-			// },
+			{
+				test: /\.(mp4)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 8192,
+							fallback: 'file-loader',
+							name: '[name].[ext]',
+							outputPath: './videos',
+							publicPath: './videos',
+						},
+					},
+				],
+			},
 			{
 				test: /\.(html)$/,
 				use: {
 					loader: 'html-loader',
 					options: {
 						// minimize: true,
-						attrs: ['img:src', 'link:href', 'source:src'],
+						attrs: ['img:src', 'link:href', 'source:src', 'video:src'],
 					},
 				},
 			},
